@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/icones">
+        <file>salvar_ico.png</file>
+        <file>editar_ico.png</file>
+        <file>scopimg.png</file>
+    </qresource>
+</RCC>
