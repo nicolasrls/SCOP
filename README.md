@@ -5,7 +5,7 @@ Assim como todo software, o SCOP foi desenvolvido na intenção de ajudar o cola
 # Como instalar?
 
 # Utilizando o SCOP:
-	Com a proposta de ter a interface mais amigável possível para facilitar o acesso, o SCOP tem a seguinte tela como a principal:
+#####	Com a proposta de ter a interface mais amigável possível para facilitar o acesso, o SCOP tem a seguinte tela como a principal:
 ![Scop](https://github.com/nicolasrls/codigos/blob/master/Projetos%20QT/SCOP/IMAGENS%20TUTORIAL/Tela%20de%20cadastro%20SCOP.PNG "Tela de cadastro")
 # Como cadastrar?
 ##### Para cadastrar é muito simples. Basta digitar todos os critérios(**sem esquecer de nenhum**), e logo em seguida apertar o botão "Cadastrar" que fica no canto inferior. Pronto! O objeto estará cadastrado logo em seguida.  
@@ -16,11 +16,26 @@ Assim como todo software, o SCOP foi desenvolvido na intenção de ajudar o cola
 ![Scop](https://github.com/nicolasrls/codigos/blob/master/Projetos%20QT/SCOP/IMAGENS%20TUTORIAL/erro%20param%20vazio.PNG "Erro de parâmetro")
 #### Caso tudo ocorra bem,
 ![Scop](https://github.com/nicolasrls/codigos/blob/master/Projetos%20QT/SCOP/IMAGENS%20TUTORIAL/Cadastrado%20com%20sucesso.PNG "Sucesso")
- 
-# Como Salvar?
+# Como alterar?
+##### Caso por engano o colaborador venha a se confundir e cadastrar um parâmetro do objeto de maneira errônea, basta ele acessar a outra parte da tabela e dar um duplo clique em cima do parâmetro a ser corrigido que abrirá uma janela de diálogo perguntando se ele deseja alterar.
 
+![Scop](https://github.com/nicolasrls/codigos/blob/master/Projetos%20QT/SCOP/IMAGENS%20TUTORIAL/editar%20item.PNG "Editar item")
+
+# Como excluir um objeto cadastrado?
+##### Para excluir um objeto, basta o colaborador acessar na barra de tarefas o item "Editar",  no qual vai lhe permitir excluir o objeto pelo nome que foi lhe dado na hora do cadastro. 
+![Scop](https://github.com/nicolasrls/codigos/blob/master/Projetos%20QT/SCOP/IMAGENS%20TUTORIAL/excluilimpar.PNG "Excluir item")
+![Scop](  https://github.com/nicolasrls/codigos/blob/master/Projetos%20QT/SCOP/IMAGENS%20TUTORIAL/excluiritem.PNG  "Excluir item")
+
+# Como Salvar?
+##### Para salvar é muito simples, basta o colaborador acessar a barra de tarefas nomeada de "Menu" e clicar no botão "Salvar". Ou simplesmente digitar o comando CTRL+S o qual abrirá uma janela de diálogo para o mesmo escolher um local viável para armazenar os dados salvos.
+![Scop](https://github.com/nicolasrls/codigos/blob/master/Projetos%20QT/SCOP/IMAGENS%20TUTORIAL/abrirsalvar.PNG "Salvar como")
 
 # Como Importar?
-# Como alterar?
-# Como excluir um objeto cadastrado?
-# Como obter ajuda?
+##### Para importar, basta o colaborador acessar a mesma barra de tarefas ou dar o comando "CTRL+O", o qual abrirá uma janela de diálogo, possibilitando escolher o arquivo .csv que foi salvo anteriormente.
+![Scop](https://github.com/nicolasrls/codigos/blob/master/Projetos%20QT/SCOP/IMAGENS%20TUTORIAL/abrirsalvar.PNG "Abrir arquivo")
+
+
+
+
+
+
