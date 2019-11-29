@@ -9,7 +9,9 @@ Projeto realizado no QT Creator, para a disciplina de Técnicas de Programação
 Assim como todo software, o SCOP foi desenvolvido na intenção de ajudar o colaborador a ter uma relação mais sadia com seu local de trabalho, de maneira menos exaustiva, o SCOP propõe uma experiência mais dinâmica no cenário de empresas de logística.
 Veja um vídeo tutorial breve.
 
-<iframe width="550" height="350" src="https://www.youtube.com/embed/oxa3S3mhr4I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<a href="https://www.youtube.com/embed/oxa3S3mhr4I"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
+alt="SCOP VIDEO" width="550" height="350" border="20" /></a>
+
 
   
 
@@ -23,7 +25,7 @@ Para instalar o SCOP, o colaborador deverá [acessar a raiz do projeto](https://
 
   
 
-Para abrir, basta o usuário pressionar a tecla "WINDOWS" <img  src="http://3.bp.blogspot.com/-YpnfXSFD3Xk/TbrI8_4J5yI/AAAAAAAAAbo/u249QEM4Aic/s1600/teclalogowindows.jpg"  alt="drawing"  width="40"  height="40"/> e digitar a palavra "SCOP" que em seguida o programa executará.
+Para abrir, basta o usuário pressionar a tecla "WINDOWS" <img  src="http://3.bp.blogspot.com/-YpnfXSFD3Xk/TbrI8_4J5yI/AAAAAAAAAbo/u249QEM4Aic/s1600/teclalogowindows.jpg"  alt="drawing"  width="40"  height="40"/> e procurar pela palavra "SCOP", em seguida executar o programa.
 
 
  ![](https://github.com/nicolasrls/codigos/blob/master/Projetos%20QT/SCOP/IMAGENS%20TUTORIAL/scopexe.PNG )
