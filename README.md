@@ -3,6 +3,7 @@ Projeto realizado no QT Creator, para a disciplina de Técnicas de Programação
 # Porque utilizar o SCOP?
 Assim como todo software, o SCOP foi desenvolvido na intenção de ajudar o colaborador a ter uma relação mais sadia com seu local de trabalho, de maneira menos exaustiva, o SCOP propõe uma experiência mais dinâmica no cenário de empresas de logística.
 # Como instalar?
+Para instalar o SCOP, o colaborador deverá [acessar a raiz do projeto](https://github.com/nicolasrls/SCOP "SCOP GITHUB RAIZ")  e baixar o arquivo executável ["scop.exe"](https://github.com/nicolasrls/SCOP "SCOP GITHUB EXECUTÁVEL"). Em seguida, basta executar o instalador na máquina, escolher um local adequado para guardar os dados e tudo fica certinho! 😬
 
 # Utilizando o SCOP:
 #####	Com a proposta de ter a interface mais amigável possível para facilitar o acesso, o SCOP tem a seguinte tela como a principal:
@@ -33,6 +34,8 @@ Assim como todo software, o SCOP foi desenvolvido na intenção de ajudar o cola
 # Como Importar?
 ##### Para importar, basta o colaborador acessar a mesma barra de tarefas ou dar o comando "CTRL+O", o qual abrirá uma janela de diálogo, possibilitando escolher o arquivo .csv que foi salvo anteriormente.
 ![Scop](https://github.com/nicolasrls/codigos/blob/master/Projetos%20QT/SCOP/IMAGENS%20TUTORIAL/abrirsalvar.PNG "Abrir arquivo")
+
+
 
 
 
