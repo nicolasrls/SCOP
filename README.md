@@ -59,7 +59,7 @@ Para abrir, basta o usuário pressionar a tecla "WINDOWS" <img  src="http://3.bp
 
 # Como alterar?
 
-##### Caso por engano o colaborador venha a se confundir e cadastrar um parâmetro do objeto de maneira errônea, basta ele acessar a outra parte da tabela e dar um duplo clique em cima do parâmetro a ser corrigido que abrirá uma janela de diálogo perguntando se ele deseja alterar.
+##### Caso por engano o colaborador venha a se confundir e cadastrar um parâmetro do objeto de maneira errônea, basta ele acessar a outra parte denominada "SCOP- Visualização" e dar um duplo clique em cima do parâmetro a ser corrigido que abrirá uma janela de diálogo perguntando se ele deseja alterar.
 
   
 
@@ -105,4 +105,4 @@ Para abrir, basta o usuário pressionar a tecla "WINDOWS" <img  src="http://3.bp
 # Ficou com mais alguma dúvida? Entre em contato através do
 
 ## Meu email: nicolas.ribeiro@academico.ifpb.edu.br
-## Meu instagram: [@nicolasribeiro](https://www.instagram.com/nicolasribeiroo_/)
+## Meu instagram: [@nicolasribeiroo_](https://www.instagram.com/nicolasribeiroo_/)
