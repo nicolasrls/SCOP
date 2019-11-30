@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/icones">
+        <file>salvar_ico.png</file>
+        <file>editar_ico.png</file>
+        <file>scopimg.png</file>
+        <file>IMAGENS TUTORIAL/logo ifpb 2.png</file>
+        <file>scopimg.ico</file>
+    </qresource>
+</RCC>
