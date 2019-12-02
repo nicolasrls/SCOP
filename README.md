@@ -13,17 +13,6 @@ alt="IMAGE ALT TEXT HERE" width="550" height="320" border="10" /></a>
 
 
 
-
-
-# Como instalar?
-
-Para instalar o SCOP, o colaborador deverá baixar o arquivo executável [instaladorSCOP.exe](https://github.com/nicolasrls/SCOP/raw/master/instalerSCOP.exe  "SCOP GITHUB EXECUTÁVEL"). Em seguida, basta executar o instalador na máquina, escolher um local adequado para guardar os dados e tudo fica certinho! 
-#### Acompanhe o processo:
-  ![instalador 1](https://github.com/nicolasrls/SCOP/blob/master/IMAGENS%20TUTORIAL/telainstalad1.PNG)
-
-![instalador 2](https://github.com/nicolasrls/SCOP/blob/master/IMAGENS%20TUTORIAL/telainstalad2.PNG)
-
-![instalador 3](https://github.com/nicolasrls/SCOP/blob/master/IMAGENS%20TUTORIAL/telainstalad3.PNG)
 # Para Abrir:
 
 Para abrir, basta o usuário pressionar a tecla "WINDOWS" <img  src="http://3.bp.blogspot.com/-YpnfXSFD3Xk/TbrI8_4J5yI/AAAAAAAAAbo/u249QEM4Aic/s1600/teclalogowindows.jpg"  alt="drawing"  width="40"  height="40"/> e procurar pela palavra "SCOP", em seguida executar o programa.
