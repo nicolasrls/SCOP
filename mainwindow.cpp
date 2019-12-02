@@ -11,6 +11,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
 }
 
 MainWindow::~MainWindow()
@@ -29,29 +30,27 @@ void MainWindow::on_btncadastrar_clicked()
         temp.setEstado(ui->estadoatual->currentText());
         temp.setDestino(ui->destinoObj->text());
         temp.setPeso(ui->pesoobj->text().toDouble());
-
         int quantidade_linhas = ui->tabela->rowCount();
-
         if(a.objetoExiste(temp) == 1){
-            QMessageBox::critical(this,"Opa...","O objeto já existe, favor editar na aba da tabela");
+            QMessageBox::critical(this,"Erro","O objeto já existe, favor inserir um objeto diferente");
         }else{
             a.inserirObjeto(temp);
             ui->tabela->insertRow(quantidade_linhas);
             inserirNaTabela(temp,quantidade_linhas);
-            QMessageBox::information(this,"Cadastro:","Cadastrado com sucesso!");
+            QMessageBox::information(this,"Cadastro","Cadastrado com sucesso!");
             ui->tabela->setColumnWidth(0,195);
             ui->tabela->setColumnWidth(3,199);
             ui->tabela->setColumnWidth(4,250);
+            atualizarEstatisticas();
+            ui->inputCi->clear();
+            ui->inputObjeto->clear();
+            ui->destinoObj->clear();
+            ui->valorobj->clear();
+            ui->pesoobj->clear();
         }
     }else{
         QMessageBox::critical(this,"Erro","Um dos parâmetros estão vazios, favor preencher e tentar novamente.");
     }
-    ui->inputCi->clear();
-    ui->inputObjeto->clear();
-    ui->destinoObj->clear();
-    ui->valorobj->clear();
-    ui->pesoobj->clear();
-
 }
 
 void MainWindow::inserirNaTabela(Cadastro a, int linha)
@@ -108,6 +107,7 @@ void MainWindow::on_actionAbrir_triggered()
             ui->tabela->insertRow(i);
             inserirNaTabela(a[i],i);
         }
+        atualizarEstatisticas();
         QMessageBox::information(this,"Arquivo"," O arquivo foi lido, cheque a tabela!");
     }
 }
@@ -145,6 +145,7 @@ void MainWindow::on_tabela_cellDoubleClicked(int row, int column)
                 a.eraseObj(txt);
                 a.inserirObjeto(temp);
                 ui->tabela->setItem(row, column, new QTableWidgetItem(temp.getObj()));
+                atualizarEstatisticas();
             }else{
                 QMessageBox::critical(this, "Erro", "O objeto a ser editado está vazio.");
             }
@@ -167,6 +168,7 @@ void MainWindow::on_tabela_cellDoubleClicked(int row, int column)
                 a.eraseCi(txt);
                 a.inserirObjeto(temp);
                 ui->tabela->setItem(row, column, new QTableWidgetItem(temp.getCi()));
+                atualizarEstatisticas();
             }else{
                 QMessageBox::critical(this, "Erro", "O objeto a ser editado está vazio.");
             }
@@ -189,6 +191,7 @@ void MainWindow::on_tabela_cellDoubleClicked(int row, int column)
                 a.eraseCi(txt);
                 a.inserirObjeto(temp);
                 ui->tabela->setItem(row, column, new QTableWidgetItem(QString::number(temp.getValor())));
+                atualizarEstatisticas();
             }else{
                 QMessageBox::critical(this, "Erro", "O objeto a ser editado está vazio.");
             }
@@ -200,7 +203,6 @@ void MainWindow::on_tabela_cellDoubleClicked(int row, int column)
             bool ok;
             QString txt = QInputDialog::getText(this, "Alterar Data de Postagem", "Digite a nova data:",QLineEdit::Normal,"",&ok);
             if(ok and !txt.isEmpty()){
-
                 temp.setObj(a[row].getObj());
                 temp.setCi(a[row].getCi());
                 temp.setData(txt);
@@ -211,6 +213,7 @@ void MainWindow::on_tabela_cellDoubleClicked(int row, int column)
                 a.eraseData(txt);
                 a.inserirObjeto(temp);
                 ui->tabela->setItem(row, column, new QTableWidgetItem(temp.getData()));
+                atualizarEstatisticas();
             }else{
                 QMessageBox::critical(this, "Erro", "O objeto a ser editado está vazio.");
             }
@@ -233,6 +236,7 @@ void MainWindow::on_tabela_cellDoubleClicked(int row, int column)
                 a.eraseStatus(txt);
                 a.inserirObjeto(temp);
                 ui->tabela->setItem(row, column, new QTableWidgetItem(temp.getEstado()));
+                atualizarEstatisticas();
             }else{
                 QMessageBox::critical(this, "Erro", "O objeto a ser editado está vazio.");
             }
@@ -255,6 +259,7 @@ void MainWindow::on_tabela_cellDoubleClicked(int row, int column)
                 a.eraseDestino(txt);
                 a.inserirObjeto(temp);
                 ui->tabela->setItem(row, column, new QTableWidgetItem(temp.getDestino()));
+                atualizarEstatisticas();
             }else{
                 QMessageBox::critical(this, "Erro", "O objeto a ser editado está vazio.");
             }
@@ -276,6 +281,7 @@ void MainWindow::on_tabela_cellDoubleClicked(int row, int column)
                 a.eraseDestino(txt);
                 a.inserirObjeto(temp);
                 ui->tabela->setItem(row, column, new QTableWidgetItem(QString::number(temp.getPeso())));
+                atualizarEstatisticas();
             }else{
                 QMessageBox::critical(this, "Erro", "O objeto a ser editado está vazio.");
             }
@@ -298,6 +304,7 @@ void MainWindow::on_actionExcluir_triggered()
                     inserirNaTabela(a[j],j);
                 }
                 QMessageBox::information(this,"OK","O objeto foi excluído");
+                atualizarEstatisticas();
             }else{
                 QMessageBox::warning(this,"Erro","O objeto não existe.");
             }
@@ -329,12 +336,20 @@ void MainWindow::on_actionAtualizar_Tabela_triggered()
         inserirNaTabela(a[j],j);
     }
     QMessageBox::information(this,"Atualizada","A tabela foi atualizada com sucesso.");
+    atualizarEstatisticas();
 }
 
 void MainWindow::on_btnAjuda_clicked()
 {
     QString url = "https://github.com/nicolasrls/SCOP/blob/master/README.md";
     QDesktopServices::openUrl(QUrl(url));
+}
+
+void MainWindow::atualizarEstatisticas()
+{
+    ui->labelTotalVal->setText(QString::number(a.somaVal()));
+    ui->labelTotalPeso->setText(QString::number(a.somaPeso()));
+    ui->labelTotalObj->setText(QString::number(a.somaTotal()));
 }
 
 

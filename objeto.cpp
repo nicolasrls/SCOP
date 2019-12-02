@@ -47,6 +47,29 @@ void Objeto::ordenarPorPeso()
     });
 }
 
+double Objeto::somaPeso()
+{
+    double soma = 0;
+    for(auto a: objetos){
+        soma += a.getPeso();
+    }
+    return soma;
+}
+
+int Objeto::somaTotal()
+{
+    return objetos.size();
+}
+
+double Objeto::somaVal()
+{
+    double soma = 0;
+    for(auto a: objetos){
+        soma += a.getValor();
+    }
+    return soma;
+}
+
 bool Objeto::salvarArquivo(QString file)
 {
     QFile arquivo(file);

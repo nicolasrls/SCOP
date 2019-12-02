@@ -43,10 +43,9 @@ private slots:
     void on_actionExcluir_triggered();
     void on_actionLimpar_Tabela_triggered();
     void on_limpartab_clicked();
-
     void on_actionAtualizar_Tabela_triggered();
-
     void on_btnAjuda_clicked();
+    void atualizarEstatisticas();
 
 private:
     Ui::MainWindow *ui;

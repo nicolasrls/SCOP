@@ -22,6 +22,9 @@ public:
     void ordenarPorCodigo();
     void ordenarPorValor();
     void ordenarPorPeso();
+    double somaPeso();
+    int somaTotal();
+    double somaVal();
     bool salvarArquivo(QString arquivo);
     bool carregarArquivo(QString arquivo);
     int size();
