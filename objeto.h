@@ -37,6 +37,7 @@ public:
     void erasePeso(QString txt);
     void eraseStatus(QString txt);
     void eraseDestino(QString txt);
+    void limparTudo();
 
 };
 

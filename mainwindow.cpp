@@ -108,6 +108,9 @@ void MainWindow::on_actionAbrir_triggered()
             inserirNaTabela(a[i],i);
         }
         atualizarEstatisticas();
+        ui->tabela->setColumnWidth(0,195);
+        ui->tabela->setColumnWidth(3,199);
+        ui->tabela->setColumnWidth(4,250);
         QMessageBox::information(this,"Arquivo"," O arquivo foi lido, cheque a tabela!");
     }
 }
@@ -127,7 +130,7 @@ void MainWindow::on_actionSair_triggered()
     QApplication::quit();
 }
 
-void MainWindow::on_tabela_cellDoubleClicked(int row, int column)
+void MainWindow::on_tabela_cellClicked(int row, int column)
 {
     if(column == 0){
         QMessageBox::StandardButton resp = QMessageBox::question(this, "Editar Itens", "Você deseja editar este item?");
@@ -319,11 +322,13 @@ void MainWindow::on_actionLimpar_Tabela_triggered()
     int qtdeLinhas = ui->tabela->rowCount();
     for(int i = 0; i < qtdeLinhas ; i++)
         ui->tabela->removeRow(0);
+
 }
 
 void MainWindow::on_limpartab_clicked()
 {
     on_actionLimpar_Tabela_triggered();
+    a.limparTudo();
     QMessageBox::information(this,"Limpo","A tabela foi resetada com sucesso");
 }
 

@@ -28,7 +28,7 @@
 </string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <property name="usesScrollButtons">
      <bool>false</bool>
@@ -456,7 +456,7 @@ background-color: rgb(0,0,0);</string>
         <item>
          <widget class="QPushButton" name="limpartab">
           <property name="text">
-           <string>Limpar Tabela</string>
+           <string>Limpar Tabela + Objetos</string>
           </property>
          </widget>
         </item>
@@ -750,7 +750,7 @@ p, li { white-space: pre-wrap; }
   </action>
   <action name="actionLimpar_Tabela">
    <property name="text">
-    <string>Limpar Tabela</string>
+    <string>Limpar Apenas Tabela</string>
    </property>
   </action>
   <action name="actionAtualizar_Tabela">

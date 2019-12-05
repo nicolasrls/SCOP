@@ -188,6 +188,11 @@ void Objeto::eraseDestino(QString txt)
     }
 }
 
+void Objeto::limparTudo()
+{
+    objetos.erase(objetos.begin(),objetos.end());
+}
+
 void Objeto::eraseValor(QString txt)
 {
     for(int i = 0; i < objetos.size(); i++){
