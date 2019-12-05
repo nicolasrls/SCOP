@@ -5,11 +5,6 @@ Projeto realizado no QT Creator, para a disciplina de Técnicas de Programação
 # Porque utilizar o SCOP?
 
 Assim como todo software, o SCOP foi desenvolvido na intenção de ajudar o colaborador a ter uma relação mais sadia com seu local de trabalho, de maneira menos exaustiva, o SCOP propõe uma experiência mais dinâmica no cenário de empresas de logística.
-Veja um vídeo tutorial breve clicando na imagem abaixo(REDIRECIONAMENTO PARA O YOUTUBE).
-
-<a href="https://www.youtube.com/embed/oxa3S3mhr4I
-" target="_blank"><img src="https://github.com/nicolasrls/codigos/blob/master/Projetos%20QT/SCOP/IMAGENS%20TUTORIAL/tela%20inicial.PNG" 
-alt="IMAGE ALT TEXT HERE" width="550" height="320" border="10" /></a>
 
 
 
@@ -102,7 +97,7 @@ Função criada para atualizar depois de limpar apenas tabela.
 ![atualizar tab](https://github.com/nicolasrls/SCOP/blob/master/IMAGENS%20TUTORIAL/att%20limparsotab.png)
 
 ### Limpar Tabela + Objetos:
-Essa função limpa todos cadastros realizados e reseta a tabela.
+Essa função limpa todos cadastros realizados e reseta a tabela. Fica localizado na aba "SCOP - Visualização".
 ![limpar tab e obj](https://github.com/nicolasrls/SCOP/blob/master/IMAGENS%20TUTORIAL/att%20limpartabobj.png)
 
 ### Ordenar Vetor e Tabela por critérios.
