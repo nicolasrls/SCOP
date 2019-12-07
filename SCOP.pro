@@ -39,7 +39,6 @@ RESOURCES += \
     ArquivodeRecursos.qrc \
     ArquivodeRecursos.qrc
 
-DISTFILES += \
-    anotações.txt
+DISTFILES +=
 
 

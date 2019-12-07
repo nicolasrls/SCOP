@@ -1,8 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-
-
 Cadastro temp;
 Objeto a;
 
@@ -164,7 +162,6 @@ void MainWindow::on_tabela_cellClicked(int row, int column)
             bool ok;
             QString txt = QInputDialog::getText(this, "Alterar CI", "Digite o novo CI", QLineEdit::Normal,"",&ok);
             if(ok and !txt.isEmpty()){
-
                 temp.setObj(a[row].getObj());
                 temp.setCi(txt);
                 temp.setData(a[row].getData());
@@ -187,7 +184,6 @@ void MainWindow::on_tabela_cellClicked(int row, int column)
             bool ok;
             QString txt = QInputDialog::getText(this, "Alterar Valor", "Digite o novo valor", QLineEdit::Normal,"",&ok);
             if(ok and !txt.isEmpty()){
-
                 temp.setObj(a[row].getObj());
                 temp.setCi(a[row].getCi());
                 temp.setData(a[row].getData());
@@ -255,7 +251,6 @@ void MainWindow::on_tabela_cellClicked(int row, int column)
             bool ok;
             QString txt = QInputDialog::getText(this, "Alterar Destino", "Digite o novo destino", QLineEdit::Normal,"",&ok);
             if(ok and !txt.isEmpty()){
-
                 temp.setObj(a[row].getObj());
                 temp.setCi(a[row].getCi());
                 temp.setData(a[row].getData());

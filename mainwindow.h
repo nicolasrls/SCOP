@@ -13,7 +13,6 @@
 #include <QTextStream>
 #include "cadastro.h"
 #include "objeto.h"
-#include "ajuda.h"
 #include <QDesktopServices>
 #include <QUrl>
 

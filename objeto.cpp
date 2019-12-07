@@ -1,9 +1,5 @@
 #include "objeto.h"
 
-//QString local = "C:/Users/nicol/Documents/codigos/Projetos QT/SCOP/Arquivo/";
-//QString nome = "dados_SCOP.csv";
-
-
 void Objeto::inserirObjeto(Cadastro a)
 {
     objetos.push_back(a);
