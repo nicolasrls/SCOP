@@ -17,7 +17,7 @@ Com a proposta de ter a interface mais amigável possível, o SCOP tem a seguint
 
 ## Como cadastrar?
 
- Para cadastrar é muito simples. Basta digitar todos os critérios (**sem esquecer de nenhum**) e logo em seguida apertar o botão "Cadastrar" que fica no canto inferior. Pronto! O objeto estará cadastrado logo em seguida.  Observe a tela de cadastro:
+ Para cadastrar é muito simples. Basta digitar todos os critérios, se atentar para usar (**"." aos invés de "," em "valor" e "peso"**) e logo em seguida apertar o botão "Cadastrar" que fica no canto inferior. Pronto! O objeto estará cadastrado logo em seguida.  Observe a tela de cadastro:
 
 ![SCOP CADASTRO](https://github.com/nicolasrls/SCOP/blob/master/IMAGENS%20TUTORIAL/tela%20de%20cadastro.png)
 
